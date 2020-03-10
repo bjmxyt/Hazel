@@ -22,7 +22,7 @@ namespace Hazel{
 		WindowResizeEvent e(1280, 720);
 		if (e.IsInCategory(EventCategoryApplication))
 		{
-			HZ_INFO("APP");
+			HZ_INFO("APPE");
 		}
 		while (1);
 	}

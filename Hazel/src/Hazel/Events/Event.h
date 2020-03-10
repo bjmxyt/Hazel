@@ -11,7 +11,7 @@ namespace Hazel {
 	// For the future, a better strategy might be to buffer events in an event
 	// bus and process them during the "event" part of the update stage.
 
-	//所有的事件类型
+	//所有的事件种类
 	enum class EventType
 	{
 		None = 0,
@@ -21,7 +21,8 @@ namespace Hazel {
 		MouseButtonPressed, MouseButtonReleased, MouseMoved, MouseScrolled
 	};
 
-	enum EventCategory
+	//时间类型
+	enum EventCategory 
 	{
 		None = 0,
 		EventCategoryApplication = BIT(0),
