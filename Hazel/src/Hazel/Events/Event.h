@@ -1,8 +1,7 @@
 #pragma once
 
+#include "hzpch.h"
 #include "Hazel/Core.h"
-#include <string>
-#include <functional>
 
 namespace Hazel {
 
@@ -53,6 +52,7 @@ namespace Hazel {
 			return GetCategoryFlags() & category;
 		}
 	protected:
+		//(Maybe)用于标记当前消息是否被接受
 		bool m_Handled = false;
 	};
 
@@ -67,6 +67,7 @@ namespace Hazel {
 		{
 		}
 
+		//分发函数
 		template<typename T>
 		bool Dispatch(EventFn<T> func)
 		{
